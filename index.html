@@ -470,6 +470,103 @@ body.js.mode-brief .navlinks{display:none;}
   html{scroll-behavior:auto;}
   *{transition-duration:.001ms !important;}
 }
+
+   /* ---------- readability pass ---------- */
+
+body{
+  font-size:18px;
+  line-height:1.68;
+}
+
+:root,
+:root[data-theme="dark"]{
+  --ink-2:#C2C8D3;
+  --ink-3:#A8B0BF;
+}
+
+.statement{
+  font-weight:400;
+}
+
+.hero h1{
+  font-weight:300;
+}
+
+.eyebrow{
+  font-size:12.5px;
+  letter-spacing:.10em;
+}
+
+.prose{
+  max-width:68ch;
+}
+
+.navlinks a{
+  color:var(--ink-2);
+  letter-spacing:.06em;
+}
+
+.sechead h2{
+  font-weight:400;
+  max-width:25ch;
+}
+
+.entry .what{
+  font-size:1rem;
+  line-height:1.68;
+  max-width:68ch;
+}
+
+.rows li{
+  padding:16px 0;
+}
+
+.rows .s{
+  font-size:.98rem;
+  line-height:1.65;
+  margin-top:5px;
+}
+
+.pov .big{
+  max-width:32ch;
+  font-weight:400;
+  font-size:clamp(1.35rem,3.1vw,2rem);
+  line-height:1.38;
+}
+
+.pov .prose{
+  max-width:62ch;
+}
+
+.fig .d{
+  font-size:.98rem;
+  line-height:1.62;
+}
+
+.split p{
+  font-size:1rem;
+  line-height:1.65;
+}
+
+@media (max-width:520px){
+  body{
+    font-size:17px;
+    line-height:1.65;
+  }
+
+  .hero .lede{
+    font-size:1.05rem;
+    line-height:1.65;
+  }
+
+  .hero .thesis{
+    line-height:1.18;
+  }
+
+  .navlinks a{
+    letter-spacing:.04em;
+  }
+}
 </style>
 <style>
 img{max-width:100%;}
